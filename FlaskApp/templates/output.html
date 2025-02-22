@@ -1,0 +1,16 @@
+<!-- output.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}"/>
+    </head>
+
+    <body>
+
+        <div class="outputContent">
+            <spam>Prediction: {{ prediction }}</spam>
+            <spam style="color: red;">{{ error }}</spam>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+.menuBarContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #84B9D4;
+
+    img{
+        background-color: #ffffff;
+        padding: 10px;
+        max-width: 80px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+        .groupTitle {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .deployBy {
+            font-size: 15px;
+            color: #ccc;
+        }
+    }
+}

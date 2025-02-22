@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    margin: 10px;
+
+    .inputContent{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 800px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+

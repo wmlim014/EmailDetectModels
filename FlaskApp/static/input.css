@@ -1,0 +1,75 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .contentTitle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label{
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        #runButton{
+            background-color: #84B9D4;
+            padding: 10px 20px;
+            color: white;
+            font-weight: 700;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #runButton:hover{
+            background-color: #6a9bb4;
+        }
+    }
+
+    #runButton:hover {
+        background-color: #6a9bb4;
+    }
+    
+    input[name="sender"]{
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #84B9D4;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 15px;
+        color: #333;
+        transition: border-color 0.3s ease;
+        width: 100%; /* Ensure it takes full width */
+        box-sizing: border-box; /* Include padding and border in the element's width */
+    }
+    
+    input[name="sender"]:focus{
+        border-color: #152a51;
+        outline: none;
+    }
+
+    textarea{
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #84B9D4;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 15px;
+        color: #333;
+        transition: border-color 0.3s ease;
+    }
+
+    textarea:focus{
+        border-color: #152a51;
+        outline: none;
+    }
+    
+    ::-ms-input-placeholder { /* Edge 12-18 */
+        color: #999999;
+    }
+    
+    ::placeholder {
+        color: #999999;
+    }
+}

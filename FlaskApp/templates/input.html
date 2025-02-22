@@ -1,0 +1,24 @@
+<!-- input.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='input.css') }}"/>
+    </head>
+    <body>
+
+        <div class="inputContent">
+
+            <form id="inputTextForm" action="/predict" method="post">
+                <div class="contentTitle">
+                    <label>Check the safety of email</label>
+                    <button id="runButton" type="submit" value="submit">Run ></button>
+                </div>
+    
+                <textarea id="emailText" rows="25" cols="50" required
+                    placeholder="Input your email content here. You might also include the email subject to increase the categories accuracy."></textarea>    
+            </form>
+            
+        </div>
+
+    </body>
+</html>
