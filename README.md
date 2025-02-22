@@ -1,5 +1,5 @@
 # Custom Email Classification
-![](./SimplePage/PageDemo.gif)
+![](./FlaskApp/PageDemo.gif)
 
 # Load app.py
 ```
