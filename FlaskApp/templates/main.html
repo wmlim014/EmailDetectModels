@@ -32,28 +32,31 @@
         <form id="inputTextForm" method="POST">
           <div class="contentTitle">
               <label>Check the safety of email</label>
-              <input id="runButton" type="submit" value="Run >"></input>
+              <div class="buttonContainer">
+                <button type="button" id="resetButton" title="Reset">
+                    <i class="resetIcon">↻</i> <!-- Reset icon -->
+                </button>
+                <input id="runButton" type="submit" value="Run >">
+            </div>
           </div>
 
-          <input name="sender" required
+          <input name="sender" id="senderInput" required
             placeholder="Input sender email here"> </input>
 
-          <textarea name="emailText" rows="20" cols="50" required
+          <textarea name="emailText" id="emailTextarea" rows="15" cols="50" required
               placeholder="Input your email content here. You might also include the email subject to increase the categories accuracy."></textarea>    
       </form>
       </div>
 
-    {% if predicted_result %}
-      <div class="output">
-        <div class="model-results {{ predicted_result }}">
-            This email is a <b>{{ predicted_result }}</b> email<br />
-        </div>
-          
-        <div>
-          <b>{{ sender_organisation }}</b>
-        </div>
+    <div id="outputSection" class="output" style="display: none;">
+      <div class="model-results {{ predicted_result }}">
+          This email is a <b>{{ predicted_result }}</b> email<br />
       </div>
-    {% endif %}
+        
+      <div>
+        <b>{{ sender_organisation }}</b>
+      </div>
+    </div>
 
   </body>
   <script 

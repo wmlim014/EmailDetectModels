@@ -7,6 +7,7 @@ form{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 10px;
 
         label{
             font-size: 20px;
@@ -43,6 +44,27 @@ form{
         transition: border-color 0.3s ease;
         width: 100%; /* Ensure it takes full width */
         box-sizing: border-box; /* Include padding and border in the element's width */
+        font-family: "Roboto", sans-serif;
+    }
+
+    .buttonContainer {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between reset and run buttons */
+    }
+
+    /* Style for the reset button */
+    #resetButton {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: #ffffff;
+        transition: color 0.3s ease;
+    }
+
+    #resetButton:hover {
+        color: #84B9D4; /* Change color on hover */
     }
     
     input[name="sender"]:focus{
@@ -50,7 +72,8 @@ form{
         outline: none;
     }
 
-    textarea{
+    /* Style for the textarea */
+    textarea[name="emailText"] {
         padding: 10px;
         border-radius: 10px;
         border: 2px solid #84B9D4;
@@ -58,18 +81,23 @@ form{
         font-size: 15px;
         color: #333;
         transition: border-color 0.3s ease;
+        width: 100%; /* Ensure it takes full width */
+        box-sizing: border-box; /* Include padding and border in the element's width */
+        font-family: "Roboto", sans-serif;
     }
 
-    textarea:focus{
-        border-color: #152a51;
+    textarea[name="emailText"]:focus {
+        border-color: #1e3c72;
         outline: none;
     }
     
     ::-ms-input-placeholder { /* Edge 12-18 */
         color: #999999;
+        font-family: "Roboto", sans-serif;
     }
     
     ::placeholder {
         color: #999999;
+        font-family: "Roboto", sans-serif;
     }
 }
